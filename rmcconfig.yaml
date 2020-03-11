@@ -1,0 +1,74 @@
+buttons:
+    '&Submit': btnSubmit
+    '&Clear': btnClear
+    '&Quit': btnQuit
+
+forms:
+    'name and age':
+        form-fields:
+            Name: leName
+            Age: leAge
+            Job: leJob
+            Hobbies: leHobbies
+        'selection':
+            'Name and Age'
+        'print-template':
+            - '----------'
+            - $$CR
+            - 'Name: '
+            - $$leName
+            - $$CR
+            - '******'
+            - $$CR
+            - 'Age: '
+            - $$leAge
+            - $$CR
+            - '<<<>>>'
+            - $$CR
+            - 'Hobbies: '
+            - $$leHobbies
+            - $$CR
+            - '&&&&&&'
+            - $$CR
+            - 'Job: '
+            - $$leJob
+            - $$CR
+            - '######'
+            - $$CR
+        'xml-template':
+            'formname': RMS_Express_Form
+            'leName': 'name'
+            'leAge': 'age'
+            'leHobbies': 'hobbies'
+            'leJob': 'job'
+
+    'cats':
+        form-fields:
+            Name: leName
+            Age: leAge
+            Color: leColor
+        'selection': 'Cats'
+        'print-template':
+            - '----------'
+            - $$CR
+            - 'Name: '
+            - $$leName
+            - $$CR
+            - '******'
+            - $$CR
+            - 'Age: '
+            - $$leAge
+            - $$CR
+            - '<<<>>>'
+            - $$CR
+            - 'Color: '
+            - $$leColor
+            - $$CR
+            - '----------'
+            - $$CR
+        'xml-template':
+            'formname': RMS_Express_Form
+            'name': leName
+            'age': leAge
+            'color': leColor
+
