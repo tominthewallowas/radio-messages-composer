@@ -7,6 +7,7 @@ from xml.dom.minidom import getDOMImplementation
 
 
 def makeDoc(form_name=None):
+    # Create the DOM
     impl = getDOMImplementation()
     dt = impl.createDocumentType("rms_express_form", None, 'rms_express_form.dtd')
     #dt = impl.createDocumentType(None, None, 'super_special.dtd')
